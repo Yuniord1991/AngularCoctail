@@ -1,0 +1,26 @@
+.present-img {
+    /* The image used */
+    background-image:url("/assets/img/background.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x:0px;
+    /*background-size: cover;*/
+    background-size:100% 100%;
+}
+@media (max-width: 768px) {
+    .present-img {
+        /* The image used */
+        background-image:url("/assets/img/background-SM.png");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position-x:0px;
+        /*background-size: cover;*/
+        background-size:100% 100%;
+    }
+}
+
+ 
+
+

@@ -1,0 +1,52 @@
+<div class="container-fluid present-img py-5">
+  <div class="py-2"></div>
+</div>
+
+<form #tragoM = "ngForm">
+{{tragoM.value | json}}
+
+<div class="minput-form pt-5 pb-1">
+  <div class="pl-6">
+      <mat-form-field class="minput-full-width">
+        <input matInput placeholder="Coctail Name" name="name" [(ngModel)]="tragoIn.Nombre">
+      </mat-form-field>
+
+  </div>
+</div>
+
+<div class="minput-form py-1 pl-6">
+  <mat-form-field>
+    <mat-label>Select Liquor</mat-label>
+    <mat-select [(value)]="liquor" multiple name="option" ngModel>
+      <mat-option *ngFor="let mapuser of mapUsers" [value]="mapuser.name.first">{{mapuser.name.first}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <!--below es son los chips con los ing seleccionados-->
+  <mat-chip-list *ngFor="let liq of liquor" [value]="liq" aria-label="Fish selection">
+      <mat-chip>{{liq}}</mat-chip>
+  </mat-chip-list>
+</div>
+
+<div class="minput-form py-1 pl-6">
+    <mat-form-field>
+      <mat-label>Select Ingredients</mat-label>
+      <mat-select [(value)]="Ingredient" multiple name="option" ngModel>
+        <mat-option *ngFor="let map of mapUsers" [value]="map.name.last">{{map.name.last}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <!--below son los chips con los ing seleccionados-->
+    <mat-chip-list *ngFor="let ing of Ingredient" [value]="ing" aria-label="Fish selection">
+        <mat-chip>{{ing}}</mat-chip>
+    </mat-chip-list>
+</div>
+
+  <div class="pl-6 minput-form py-2">
+    <div>
+      <mat-form-field class="minput-full-width">
+        <textarea matInput placeholder="Preparation" name="prep" [(ngModel)]="tragoIn.Preparacion"></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+
+<button mat-button (click)="enviarReceta()">daleeeee</button>
+</form>

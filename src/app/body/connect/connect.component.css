@@ -1,0 +1,47 @@
+/*----------- Social Media Icons ----------------*/
+
+  .social-media {
+    height: 80px;
+    margin: 2rem;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+  .social-media:hover {
+    opacity: 0.4;
+    height:81px;
+}
+  @media (min-width: 768px) {
+     .social-media {
+         height:130px;
+         padding: 1rem;
+         }
+        .social-media:hover {
+            opacity: 0.4;
+            height:131px;
+        }
+    }
+ 
+  @media (min-width: 992px) {
+      .social-media {
+          height:140px;
+          padding: 1rem;
+      }
+      .social-media:hover {
+        opacity: 0.4;
+        height:141px;
+    }
+  }
+  @media (min-width: 1200px) {
+     .social-media {
+         height:140px;
+         padding: 1rem;
+     }
+     .social-media:hover {
+        opacity: 0.4;
+        height:160px;
+    }
+ }
+ 
+ 

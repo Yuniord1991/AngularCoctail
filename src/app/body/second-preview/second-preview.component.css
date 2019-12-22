@@ -1,0 +1,33 @@
+/* Second Preview */
+.padding1 {
+    padding:5rem;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+   .padding1 {
+       padding:1rem;
+       padding-left:2rem;
+   }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+   .padding1 {
+       padding:3rem;
+   }
+}
+
+@media (max-width:576px) {
+   .padding1 {
+       padding:1rem;
+       padding-top:1rem;
+   }
+}
+
+ .pdd-btwn-prev2 {
+    padding-bottom: 2rem;
+ }
+@media (min-width:992px) {
+    .pdd-btwn-prev2 {
+        padding-bottom: 3rem;
+    }
+}

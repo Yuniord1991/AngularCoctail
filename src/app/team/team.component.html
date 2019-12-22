@@ -1,0 +1,38 @@
+ <!--then only "img-fluid" class will not solve your problem. you have to set the width of image to 100%, for that you can use Bootstrap class "w-100". keep in mind that "container-fluid" and "col-12" class sets left and right padding to 15px and "row" class sets left and right margin to "-15px" by default. make sure to set them to 0.
+
+Note: "px-0" is a bootstrap class which sets left and right padding to 0 and
+"mx-0" is a bootstrap class which sets left and right margin to 0-->
+
+<div class="container-fluid px-0">
+    <div class="row mx-0">
+        <div class="col-12 px-0 d-none d-lg-block">
+            <img src="/assets/img/Team-Background-XL.png" class="img-fluid w-100">
+        </div>
+        <div class="col-12 px-0 d-none d-sm-block d-lg-none">
+            <img src="/assets/img/Team-Background-MD.png" class="img-fluid w-100">
+        </div>
+        <div class="col-12 px-0 d-sm-none">
+            <img src="/assets/img/Team-Background-SM.png" class="img-fluid w-100">
+        </div>
+    </div>
+</div>
+
+<div class="container padding p-5 pb-5">
+    <div class="row">
+        <div class="col py-3 col-sm-6 col-lg-4 col-xl-4" *ngFor="let user of users">
+          <mat-card class="example-card">
+              <mat-card-header>
+                  <img mat-card-avatar src={{user.picture.thumbnail}}>
+                  <mat-card-title>{{user.name.first}} {{user.name.last}}</mat-card-title>
+                  <mat-card-subtitle>{{user.dob.age}}</mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image src={{user.picture.large}} alt="Photo">
+              <mat-card-content>
+                  <p>
+                  From {{user.nat}}, {{user.name.first}} {{user.name.last}} is a brilliant partner from our team, who seek everyday for the improvement, the cleanest and fastest way of coding .
+                  </p>
+              </mat-card-content>
+          </mat-card>
+      </div>
+    </div>
+</div>

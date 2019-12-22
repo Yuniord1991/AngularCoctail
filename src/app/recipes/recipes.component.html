@@ -1,0 +1,71 @@
+<div class="container-fluid present-img py-5">
+    <div class="py-2"></div>
+</div>
+
+<form #tragoM = "ngForm" class="container-fluid p-5 pt-5">
+    <div class="row justify-content-between">
+      <div class="pl-6 col-6">
+
+          <div class="minput-form text-center pl-5 pt-2">
+              <h2 class="display-5 d-md-none pb-5">Create</h2>
+              <h2 class="display-3 d-none d-md-block pb-5">Create</h2>
+          </div>
+          <mat-card class="mat-elevation-z3">
+            <div class="col pl-5 pt-5">
+              <mat-form-field class="minput-form py-1">
+                <input matInput placeholder="Coctail Name" name="name" [(ngModel)]="tragoIn.Nombre">
+              </mat-form-field>
+            </div>
+
+            <div class="col pl-5">
+              <mat-form-field class="minput-form py-1">
+                <input matInput placeholder="Liquor to use" name="Liquor" [(ngModel)]="tragoIn.Licor">
+              </mat-form-field>
+            </div>
+
+            <div class="col pl-5">
+              <mat-form-field class="minput-form py-1">
+                  <input matInput placeholder="Ingredients" name="Ingredient" [(ngModel)]="tragoIn.Ingredientes">
+              </mat-form-field>
+            </div>
+
+            <div class="col pl-5">
+              <mat-form-field class="minput-form py-2">
+                <textarea matInput placeholder="Preparation" name="prep" [(ngModel)]="tragoIn.Preparacion"></textarea>
+              </mat-form-field>
+            </div>
+            <div class="col pt-3 pl-5 pb-4">
+                <button class="col-4" mat-raised-button color="primary" (click)="enviarRecip()">Save Recipe</button>
+            </div>
+            <div class="col pt-3 pl-5 pb-4">
+                <button class="col-4" mat-raised-button color="primary" (click)="delRecip()">Delete</button>
+            </div>
+          </mat-card>
+
+      </div>
+
+      <div class="col-5">
+          <div class="text-center pt-2 pr-5">
+            <h3 class="display-5 d-md-none pb-4">Recipes</h3>
+            <h3 class="display-3 d-none d-md-block pb-4">Recipes</h3>
+          </div>
+          <div class="p-2"></div>
+          <div class="col pb-1 pt-2" *ngFor="let Trago of Tragos">
+              <mat-card class="minput-form mat-elevation-z2" (click)="edit(Trago)">
+                  <mat-card-header>
+                      <mat-card-title>{{Trago.Nombre}}</mat-card-title>
+                      <mat-card-subtitle>{{Trago.Licor}}</mat-card-subtitle>
+                  </mat-card-header>
+                  <mat-card-content>
+                      <p>
+                      {{Trago.Preparacion}}
+                      </p>
+                  </mat-card-content>
+              </mat-card>
+          </div>
+
+      </div>
+    </div>
+</form>
+
+

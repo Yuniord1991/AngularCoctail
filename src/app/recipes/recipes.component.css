@@ -1,0 +1,38 @@
+.present-img {
+  /* The image used */
+  background-image:url("/assets/img/background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position-x:0px;
+  /*background-size: cover;*/
+  background-size:100% 100%;
+}
+ .minput-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+/*
+.minput-full-width {
+  width: 100%;
+} */
+
+.pl-6 {
+  padding-left: 3.7rem !important;
+}
+
+/*.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+*/
+.example-card {
+  max-width: 400px;
+}

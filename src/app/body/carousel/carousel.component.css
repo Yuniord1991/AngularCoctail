@@ -1,0 +1,36 @@
+.carousel {
+    padding-top: 7rem;
+}
+
+ @media (min-width: 768px) and (max-width: 1200px) {
+  .carousel {
+      padding-top: 8rem;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .carousel {
+      padding-top: 7rem;
+  }
+}
+
+
+.bg-YuniorColor2 {
+    background: rgba(70,181,131,1);
+    background: -moz-linear-gradient(left, rgba(70,181,131,1) 0%, rgba(52,133,168,1) 10%, rgba(145,123,173,1) 84%, rgba(145,123,173,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(70,181,131,1)), color-stop(10%, rgba(52,133,168,1)), color-stop(84%, rgba(145,123,173,1)), color-stop(100%, rgba(145,123,173,1)));
+    background: -webkit-linear-gradient(left, rgba(70,181,131,1) 0%, rgba(52,133,168,1) 10%, rgba(145,123,173,1) 84%, rgba(145,123,173,1) 100%);
+    background: -o-linear-gradient(left, rgba(70,181,131,1) 0%, rgba(52,133,168,1) 10%, rgba(145,123,173,1) 84%, rgba(145,123,173,1) 100%);
+    background: -ms-linear-gradient(left, rgba(70,181,131,1) 0%, rgba(52,133,168,1) 10%, rgba(145,123,173,1) 84%, rgba(145,123,173,1) 100%);
+    background: linear-gradient(to right, rgba(70,181,131,1) 0%, rgba(52,133,168,1) 10%, rgba(145,123,173,1) 84%, rgba(145,123,173,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#46b583', endColorstr='#917bad', GradientType=1 );
+  }
+
+.left-to-middle {
+    padding-left: 17%;
+}
+
+.left-to-middle-btn {
+  padding-left:15%;
+}
