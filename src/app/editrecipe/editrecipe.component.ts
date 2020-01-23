@@ -10,12 +10,12 @@ export class EditrecipeComponent implements OnInit {
 
   test = 0;
 
-  constructor(private route: ActivatedRoute) {
-    this.route.paramMap.subscribe((data: ParamMap) => {
-      this.test = Number.parseInt(data.get('id'));
-      console.log(this.test);
-    });
-  }
+  // constructor(private route: ActivatedRoute) {
+  //   this.route.paramMap.subscribe((data: ParamMap) => {
+  //     this.test = Number.parseInt(data.get('id'));
+  //     console.log(this.test);
+  //   });
+  // }
 
   ngOnInit() {
   }
