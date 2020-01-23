@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
 
+# Correr Codigo en Local
+-Ya que la carpeta completa de "Node_Module" esta descartada por github automaticamente por motivos de peso, al descargar el codigo en el code es necesario insertar en powersell "npm i" antes de correr con "ng serve".
+-En Angular.json estan especificadas las herramientas utilizadas
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
