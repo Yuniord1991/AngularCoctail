@@ -51,7 +51,7 @@
           </div>
           <div class="p-2"></div>
           <div class="col pb-1 pt-2" *ngFor="let Trago of Tragos">
-              <mat-card class="minput-form mat-elevation-z2" (click)="edit(Trago)">
+              <mat-card class="minput-form mat-elevation-z2" (click)="goToUpdateComponent(Trago.Id_Receta)">
                   <mat-card-header>
                       <mat-card-title>{{Trago.Nombre}}</mat-card-title>
                       <mat-card-subtitle>{{Trago.Licor}}</mat-card-subtitle>

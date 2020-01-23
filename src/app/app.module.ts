@@ -37,6 +37,7 @@ import { RandomTeamService } from './Service/random-team.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ConnectOutComponent } from './connect-out/connect-out.component';
 import { InputtestComponent } from './inputtest/inputtest.component';
+import { EditrecipeComponent } from './editrecipe/editrecipe.component';
 
 const appRoutes: Routes = [
   { path: '', component: BodyComponent},
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
   { path: 'connect', component: ConnectOutComponent },
   { path: 'team', component: TeamComponent },
   { path: 'recipes', component: RecipesComponent },
+  { path: 'editrecipe/:id', component: EditrecipeComponent }
 ];
 
 @NgModule({
@@ -62,6 +64,7 @@ const appRoutes: Routes = [
     RecipesComponent,
     ConnectOutComponent,
     InputtestComponent,
+    EditrecipeComponent
   ],
   imports: [
     BrowserModule,

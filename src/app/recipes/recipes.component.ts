@@ -5,6 +5,8 @@ import { User } from '../Service/User';
 import { Coctail } from 'src/app/models/Coctail.model';
 import { CoctailService } from 'src/app/Service/licor/coctail.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-recipes',
@@ -25,6 +27,7 @@ export class RecipesComponent implements OnInit {
     private service: RandomTeamService,
     private coctailService: CoctailService,
     private snackBar: MatSnackBar,
+    private router: Router,
     ) { }
 
   ngOnInit() {
@@ -79,6 +82,10 @@ export class RecipesComponent implements OnInit {
     });
   }
 
+  goToUpdateComponent(id: number) {
+    console.log(id + ' received');
+    this.router.navigate(['recipes/editrecipe', { id }]);
+  }
 
     // todo esto es prueba para poder recibir el api consumido, mapearlo y obtener el valor de la seleccion desde el html
   // cargarLicores() {
